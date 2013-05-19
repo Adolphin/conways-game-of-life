@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*Initialize*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#def;overflow-y:scoll;overflow:-moz-scrollbars-vertical;background:#345678;}
+body,button,input,select,textarea{font-size:12px;font-family:consolas,"微软雅黑";}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#fff;}
+a:link{color:#fff;}
+a:visited{color:#fff;}
+a:hover{color:#123;}
+a:active{color:#123;}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+th{font-weight:normal;}
+img{-ms-interpolation-mode:bicubic}
+textarea{resize:vertical}
+body{background:#345678;color:#def;}
+
+/*Header*/
+div.header{}
+div.header div.top{
+	height:30px;
+	line-height:30px;
+	background:#123;
+	border-bottom:1px solid #666;
+	text-align:center;
+	position:relative;
+}
+
+div.header div.top div.topLeft{
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	top:0px;
+	left:10px;
+}
+
+div.header div.top div.topRight{
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	top:0px;
+	right:10px;
+}
+
+div.header div.top div.topCenter{
+	margin:0 auto;
+	height:30px;
+	line-height:30px;
+	width:800px;
+	text-align:left;
+	font-size:14px;
+}
+
+div.header div.top div.topCenter h1{
+	font-weight:bold;
+	display:inline;
+}
+
+div.header div.top div.topCenter div.Menu{
+	width:800px;
+	margin:0 auto;
+	border:1px solid #666;
+	line-height:20px;
+	position:absolute;
+	top:30px;
+	z-index:9999;
+	background:#123;
+	display:none;
+}
+
+div.header div.top div.topCenter div.Menu div.MenuTitle{
+	padding:10px;
+	font-size:16px;
+}
+
+div.header div.top div.topCenter div.Menu div.MenuLeft{
+	width:50%;
+	float:left;
+}
+div.header div.top div.topCenter div.Menu div.MenuRight{
+	width:50%;
+	float:left;
+}
+div.header div.top div.topCenter div.Menu table{
+	width:100%;
+	font-size:12px;
+}
+div.header div.top div.topCenter div.Menu table tr{
+	height:30px;
+}
+div.header div.top div.topCenter div.Menu table td{
+	width:25%;
+	padding-left:5px;
+}
+div.header div.top div.topCenter div.Menu table th{
+	text-align:right;
+}
+div.header div.top div.topCenter div.Menu table td input{
+	vertical-align:middle;
+}
+div.header div.top div.topCenter div.Menu table td input.text{
+	width:80%;
+	border:0px;
+	line-height:20px;
+	height:20px;
+	vertical-align:middle;
+}
+div.header div.top div.topCenter div.Menu table td input#cbIsBorder{
+	margin-left:5px;
+	border:0px;
+}
+.ErrorTxt{
+	color:red;
+}
+div.header div.top div.topCenter div.Menu div.MenuButton{
+	clear:both;
+	padding:20px;
+	padding-right:50px;
+	text-align:right;
+}
+div.header div.top div.topCenter div.Menu div.MenuButton input{
+	margin: 0 10px;
+	width:80px;
+	height:25px;
+	border:2px solid #888;
+	background:#ccc;
+	color:#666;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+}
+div.header div.top div.topCenter div.Menu div.MenuButton input:hover{
+	border:2px solid #345678;
+	background:#def;
+	color:#345678;
+}
+div.header div.top div.topCenter input#btConfig{
+	background:url("../images/imConfig.png") no-repeat;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	border:0px;
+	color:#def;
+	padding-left:15px;
+	cursor:pointer;
+	float:right;
+}
+
+/*Main*/
+div.main{
+	margin:50px auto;
+	text-align:center;
+}
+div.main div.ControlPanel{
+	width:800px;
+	margin:0 auto;
+}
+div.main div.ControlPanel input{
+	width:50px;
+	height:50px;
+	border:0px;
+	margin:0 10px;
+	cursor:pointer;
+}
+div.main div.ControlPanel input.Next{
+	background:url("../images/Next.png");
+}
+div.main div.ControlPanel input.Next:hover{
+	background:url("../images/Nexthover.png");
+}
+div.main div.ControlPanel input.Back{
+	background:url("../images/Back.png");
+}
+div.main div.ControlPanel input.Back:hover{
+	background:url("../images/Backhover.png");
+}
+div.main div.ControlPanel input.Play{
+	background:url("../images/Play.png");
+}
+div.main div.ControlPanel input.Play:hover{
+	background:url("../images/Playhover.png");
+}
+div.main div.ControlPanel input.Pause{
+	background:url("../images/Pause.png");
+}
+div.main div.ControlPanel input.Pause:hover{
+	background:url("../images/Pausehover.png");
+}
+
+div.main div.ConwayTable{
+	margin-top:20px;
+}
